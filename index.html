@@ -1,0 +1,289 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CPE 314 Project Index</title>
+  <style>
+    :root {
+      --bg: #f2f5f8;
+      --ink: #0b1320;
+      --muted: #475569;
+      --primary: #f43f5e;
+      --secondary: #0ea5e9;
+      --card: #ffffff;
+      --border: #e2e8f0;
+      --shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Gill Sans MT", "Century Gothic", "Franklin Gothic Medium", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(900px 300px at 15% 0%, #ffe4e6 0%, transparent 55%),
+        radial-gradient(700px 400px at 85% 10%, #e0f2fe 0%, transparent 55%),
+        repeating-linear-gradient(135deg, rgba(15, 23, 42, 0.03) 0 14px, transparent 14px 28px),
+        var(--bg);
+      min-height: 100vh;
+    }
+
+    .reg-banner {
+      margin: 16px auto 0;
+      max-width: 1200px;
+      padding: 12px 18px;
+      background: #0b1320;
+      color: #ffffff;
+      border-radius: 10px;
+      letter-spacing: 0.6px;
+      font-size: 18px;
+    }
+
+    .wrap {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 24px 18px 48px;
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 24px;
+    }
+
+    .side {
+      background: linear-gradient(160deg, #111827 0%, #1f2937 100%);
+      color: #f8fafc;
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: var(--shadow);
+      position: sticky;
+      top: 16px;
+      height: fit-content;
+    }
+
+    .side h2 {
+      font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+      margin: 6px 0 8px;
+      font-size: 28px;
+    }
+
+    .side p {
+      margin: 0 0 14px;
+      color: #cbd5f5;
+      font-size: 14px;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 6px 10px;
+      background: rgba(244, 63, 94, 0.15);
+      color: #fecdd3;
+      border: 1px solid rgba(244, 63, 94, 0.35);
+      border-radius: 999px;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .stats {
+      margin-top: 16px;
+      display: grid;
+      gap: 12px;
+    }
+
+    .stat {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 10px 12px;
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 20px;
+      color: #fff;
+    }
+
+    .stat span {
+      font-size: 12px;
+      color: #d1d5db;
+    }
+
+    .content {
+      display: grid;
+      gap: 18px;
+    }
+
+    .hero {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 20px 22px;
+      box-shadow: var(--shadow);
+    }
+
+    .hero h3 {
+      font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+      margin: 0 0 6px;
+      font-size: 26px;
+    }
+
+    .hero p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 16px;
+      box-shadow: 0 8px 18px rgba(15, 23, 42, 0.06);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card::after {
+      content: "";
+      position: absolute;
+      inset: auto -20px -20px auto;
+      width: 70px;
+      height: 70px;
+      background: rgba(14, 165, 233, 0.18);
+      border-radius: 50%;
+    }
+
+    .card h4 {
+      margin: 0 0 6px;
+      font-size: 18px;
+    }
+
+    .card p {
+      margin: 0 0 12px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .card a {
+      display: inline-block;
+      text-decoration: none;
+      background: var(--primary);
+      color: #fff;
+      padding: 8px 12px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .card a:hover {
+      background: #e11d48;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 14px;
+      margin-top: 12px;
+    }
+
+    @media (max-width: 900px) {
+      .wrap {
+        grid-template-columns: 1fr;
+      }
+
+      .side {
+        position: static;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1 class="reg-banner">23/EG/CO/015</h1>
+
+  <div class="wrap">
+    <aside class="side">
+      <span class="tag">CPE 314</span>
+      <h2>Project Index</h2>
+      <p>All labs in one place. Built with HTML, CSS, and JavaScript.</p>
+
+      <div class="stats">
+        <div class="stat">
+          <strong>8</strong>
+          <span>Completed Labs</span>
+        </div>
+        <div class="stat">
+          <strong>3</strong>
+          <span>Core Web Skills</span>
+        </div>
+        <div class="stat">
+          <strong>2026</strong>
+          <span>Academic Session</span>
+        </div>
+      </div>
+    </aside>
+
+    <div class="content">
+      <section class="hero">
+        <h3>My Web Development Coursework</h3>
+        <p>Explore each project to see progress from basic HTML to full JS apps.</p>
+      </section>
+
+      <section class="grid">
+        <div class="card">
+          <h4>Lab 1</h4>
+          <p>HTML Basics</p>
+          <a href="lab1/lab1.html">Open</a>
+        </div>
+        <div class="card">
+          <h4>Lab 2</h4>
+          <p>Advanced HTML Elements</p>
+          <a href="lab2/lab2.html">Open</a>
+        </div>
+        <div class="card">
+          <h4>Lab 3</h4>
+          <p>CSS Basics</p>
+          <a href="lab3/lab3.html">Open</a>
+        </div>
+        <div class="card">
+          <h4>Lab 4</h4>
+          <p>Layout and Styling</p>
+          <a href="lab4/lab4.html">Open</a>
+        </div>
+        <div class="card">
+          <h4>Lab 5</h4>
+          <p>JavaScript Basics</p>
+          <a href="lab5/lab5.html">Open</a>
+        </div>
+        <div class="card">
+          <h4>Lab 6</h4>
+          <p>DOM Manipulation</p>
+          <a href="lab6/lab6.html">Open</a>
+        </div>
+        <div class="card">
+          <h4>Lab 7</h4>
+          <p>Events and Interactivity</p>
+          <a href="lab7/lab7.html">Open</a>
+        </div>
+        <div class="card">
+          <h4>Lab 8</h4>
+          <p>To-Do List Application</p>
+          <a href="lab8/todo.html">Open</a>
+        </div>
+      </section>
+
+      <footer>
+        <p>Registration Number: 23/EG/CO/015</p>
+        <p>© 2026 Web Development Coursework</p>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
