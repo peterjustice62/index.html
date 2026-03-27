@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lab 2 - Advanced HTML Elements</title>
+</head>
+<body>
+  <h1>23/EG/CO/015</h1>
+
+  <header>
+    <h2>Student Profile</h2>
+  </header>
+
+  <nav>
+    <a href="#profile">Profile</a> |
+    <a href="#students">Students</a> |
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <section id="profile">
+      <h3>Profile Image</h3>
+      <img src="profile.svg" alt="Student profile" width="150" height="150" />
+    </section>
+
+    <section id="students">
+      <h3>Student Table</h3>
+      <table border="1" cellpadding="6">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Department</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>John Doe</td>
+            <td>21</td>
+            <td>Computer Science</td>
+          </tr>
+          <tr>
+            <td>Mary Smith</td>
+            <td>20</td>
+            <td>Information Tech</td>
+          </tr>
+          <tr>
+            <td>Abdul Musa</td>
+            <td>22</td>
+            <td>Electrical Eng.</td>
+          </tr>
+          <tr>
+            <td>Grace Okoro</td>
+            <td>19</td>
+            <td>Software Eng.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <article id="contact">
+      <h3>Contact Form</h3>
+      <form>
+        <p>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" />
+        </p>
+
+        <fieldset>
+          <legend>Gender</legend>
+          <label><input type="radio" name="gender" value="male" /> Male</label>
+          <label><input type="radio" name="gender" value="female" /> Female</label>
+          <label><input type="radio" name="gender" value="other" /> Other</label>
+        </fieldset>
+
+        <p>
+          <label><input type="checkbox" name="subscribe" /> Subscribe to newsletter</label>
+        </p>
+
+        <p>
+          <label for="comments">Comments:</label><br />
+          <textarea id="comments" name="comments" rows="4" cols="40"></textarea>
+        </p>
+
+        <input type="submit" value="Submit" />
+      </form>
+    </article>
+  </main>
+
+  <footer>
+    <p>Advanced HTML Elements Lab</p>
+  </footer>
+</body>
+</html>
